@@ -14,7 +14,7 @@ def outlook_push():
         else:
             payload = request.data.decode('ascii')
             print("Incoming Notification : ", payload)
-            response = requests.post('https://5cbae04e.ngrok.io/test', data=json.dumps(payload))
+            response = requests.post('https://7a586aa6.ngrok.io/test', data=json.dumps(payload))
             print(response)
             return 'OK', 200
     except Exception as e:
