@@ -6,7 +6,7 @@ from flask import request
 app = Flask(__name__)
 
 
-@app.route('/outlook/test', methods=['POST'])
+@app.route('/outlook/test', methods=['GET'])
 def outlook_push():
     try:
         if request.data.decode('ascii') == '':
